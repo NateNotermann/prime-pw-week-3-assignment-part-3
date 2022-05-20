@@ -6,25 +6,30 @@ console.log('****** Part Supply *******');
 console.log('1. Number of partsNeeded:');
 let partsNeeded = 40; //this works
 partsNeeded = 40; //or this work, ONLY IF it wasn't previously created in the doc
-console.log( 'partsNeeded equals:', partsNeeded );
+console.log( 'partsNeeded equals:', partsNeeded ); //console.logged them to check it worked
 
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 console.log('2. Array of supplyChanges:');
 //VERY important - question said NUMBERS. NOT a string of numbers. 
 let supplyChanges = [ 3, 5, -6, 0, 7, 11 ];
-console.log( 'supplyChanges equals:', supplyChanges );
-console.log( 'supplyChanges equals:'+ supplyChanges );
+console.log( 'supplyChanges equals:', supplyChanges ); //console.logged them to check it worked
+console.log( 'supplyChanges equals:'+ supplyChanges ); //console.logged them to check it worked
 
 // 3. Console log the value of the second item in the 'supplyChanges' array
 console.log('3. Second supplyChange is:');
 console.log( 'the second item in supplyChanges is:', supplyChanges[1] );  //main way i would do it
 console.log( 'the second item in supplyChanges is: '+ supplyChanges[1] ); //alternative if item needed to be a string
-
+//console.logged them to check it worked
 
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges' 
 //    array & console.log the value removed.
 console.log('4. Removed item:');
+// supplyChanges.pop();  // this alone only REMOVES ITEM, doesn NOT console.log anything\
+console.log( 'Removing last item, which is:', supplyChanges.pop() ); // ".pop" REMOVES LAST item in array
+//puting the actual command INSIDE a console.log does both remove and Console.log the item
+console.log( 'now supplyChanges is:', supplyChanges );
+
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Adding 25 to supplyChanges.');
