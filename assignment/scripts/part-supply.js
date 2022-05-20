@@ -6,11 +6,15 @@ console.log('****** Part Supply *******');
 console.log('1. Number of partsNeeded:');
 let partsNeeded = 40; //this works
 partsNeeded = 40; //or this work, ONLY IF it wasn't previously created in the doc
-console.log( partsNeeded );
+console.log( 'partsNeeded equals:', partsNeeded );
 
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 console.log('2. Array of supplyChanges:');
+//VERY important - question said NUMBERS. NOT a string of numbers. 
+let supplyChanges = [ 3, 5, -6, 0, 7, 11 ];
+console.log( 'supplyChanges equals:', supplyChanges );
+console.log( 'supplyChanges equals:'+ supplyChanges );
 
 // 3. Console log the value of the second item in the 'supplyChanges' array
 console.log('3. Second supplyChange is:');
