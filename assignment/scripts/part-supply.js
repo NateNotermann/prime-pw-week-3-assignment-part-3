@@ -32,7 +32,11 @@ console.log( 'now supplyChanges is:', supplyChanges );
 
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
+//I noticed it doesn't ask us to console.log it. i would use a different code if it did. I think.
 console.log('5. Adding 25 to supplyChanges.');
+supplyChanges.push ( 40 ); //".push" ADDS item to the END of the array
+console.log( 'supplyChanges array is now:', supplyChanges );
+
 
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
 //    Use a console.log formatted as follows, where x is the value from the array
