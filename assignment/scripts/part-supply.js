@@ -111,3 +111,12 @@ console.log('8. Total supplies available is:');
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+
+// Slack question test code below 
+console.log( 'Slack question test code below' );
+let favFoods = ['pizza', 'fried chicken', 'puppy-chow', 'magaritas' ];
+console.log( favFoods );
+let notAFood = favFoods.pop(); 
+console.log ( 'whoops!' );  
+console.log ( notAFood, 'is not a food'); 
+console.log( favFoods );
