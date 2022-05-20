@@ -45,11 +45,60 @@ console.log( 'supplyChanges array is now:', supplyChanges );
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
 
+//works with just a FOR 
+console.log( ' ----6 answer 1--FOR LOOP--');
+for ( let x=0; x<supplyChanges.length; x++ ) { //for loop. x = value of array
+    // console.log( 'supplyChanges v2', supplyChanges[ x ] ); //console.logs all items in array.
+    //console.loging all items in array is not required of question, so i deactivated it.
+    if( supplyChanges[ x ] > 0 ){ // if item is GREATER than 0, aka POSITIVE then do
+        console.log( 'Added', supplyChanges[x],'parts', '- (b/c item is POSITIVE)' ); //console.log "added [x] parts" 
+    } else if ( supplyChanges[x] === 0 ){ // but IF item is equal to 0, 
+        console.log( 'No change', '- (b/c index item is', supplyChanges[x], ')'  ); //console.log "no change"
+    } else { //if ( ( supplyChanges[x] < 0 ) {     <<<---- in THEORY could do else if, but longer code
+        console.log('Removed', supplyChanges[x], 'parts. (b/c item is NEGATIVE)' );
+    }
+}
+
+
+
+
+console.log( ' ----6 answer 2--For IN Loop--');
+//works with a FOR IN loop  also
+for ( x in supplyChanges ) { //for loop. x = value of array
+    if( supplyChanges[ x ] > 0 ){ // if item is GREATER than 0, aka POSITIVE then do
+        console.log( 'Added', supplyChanges[x],'parts', '- (b/c item is POSITIVE)' ); //console.log "added [x] parts" 
+    } else if ( supplyChanges[x] === 0 ){ // but IF item is equal to 0, 
+        console.log( 'No change', '- (b/c index item is', supplyChanges[x], ')'  );
+    } else {
+        console.log('Removed', supplyChanges[x], 'parts. (b/c item is NEGATIVE)' );
+    }
+}
+
+
+// if( supplyChanges[ x ] > 0 ); {
+//     console.log( 'supplyChanges v2 is POSITIVE' ); 
+// }
+
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
 console.log('7. Showing supplyChanges with "for of" loop');
+
+
+//WORKS with FOR OF loop  - Basicly just SWAPS out all "supplyChanges[x]" for "x" variable. That's basicly it.
+//uses the array object OF the array. as a string and not the actual number value?
+console.log( ' ----6 answer 3--For OF Loop--');
+for ( x of supplyChanges ) { //for loop. x = value of array
+    if( x > 0 ){ // if item is GREATER than 0, aka POSITIVE then do
+        console.log( 'Added', x,'parts', '- (b/c item is POSITIVE)' ); //console.log "added [x] parts" 
+    } else if ( x === 0 ){ // but IF item is equal to 0, 
+        console.log( 'No change', '- (b/c index item is', x+ ')'  );
+    } else {
+        console.log('Removed', x, 'parts. (b/c item is NEGATIVE)' );
+    }
+}
+
 
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
